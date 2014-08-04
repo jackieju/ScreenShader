@@ -7,9 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MyWindow.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>{
+    NSWindow *_mywindow;
+    int status;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+
+- (void)handleHotKey;
+
 
 @end
